@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
     <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
     <header class="header-area">
@@ -54,9 +53,11 @@
         <h1 section-header>OFERTA</h1>
         <div class="projects-header"><img src="/img/right-arrow.png" alt="arrow" class="arrow"><span>Gotowe</span> projekty domów na zgłoszenie - od zaraz na Twojej działce!</div>
         <div class="houses-container row">
-          <div class="house col-md-4">
-            <img src="/img/kostka.png" alt="" class="jpg">
-            <p>CUBE mini</p>
+          <div class="house col-md-4"> 
+            <button id="click">
+              <img src="/img/kostka.png" alt="" class="jpg">
+              <p>CUBE mini</p>
+            </button>
           </div>
           <div class="house col-md-4">
             <img src="/img/cube2i.jpg" alt="" class="jpg">
@@ -87,7 +88,32 @@
       
       </div>
     </div>
+    
+<!-- POP UP -->
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- POP UP ends-->
       <div id="tech">
         <div class="methods row">
           <div class="scheme col-md-6">
@@ -95,30 +121,93 @@
           </div>
           <div class="method-container col-md-6">
             <h1 section-header>TECHNOLOGIA</h1>
-          <p>W zależności od gabarytów budynku oraz preferencji Inwestora, firma ScandyHouse ofertuje swoje konstrukcje w 3 formach:</p>
+            <p><span class="number">1. Rodzaje konstrukcji </span>- w zależności od gabarytów budynku oraz preferencji Inwestora, firma ScandyHouse ofertuje swoje konstrukcje w 3 formach:</p>
             <ul>
-              <li>
-                DREWNIANA KONSTRUKCJA<br>
-                Zostać bohaterem swojego domu i złóż go niczym z klocków Lego!</br>
-                Gotowe elementy konstrukcji drewnianej (szkieletu) dostarczane są do Klienta razem z instrukcją montażu. Daje to możliwość oszczędzenia pieniędzy oraz wykończenia domku według własnego uznania.
+              <li class="row">
+                <div class="metod-list-text col-md-8">
+                  <h6>DREWNIANY SZKIELET</h6><br>
+                  Zostać bohaterem swojego domu i złóż go niczym z klocków Lego!</br>
+                  Gotowe elementy konstrukcji drewnianej (szkieletu) dostarczane są do Klienta razem z instrukcją montażu. Daje to możliwość oszczędzenia pieniędzy oraz wykończenia domku według własnego uznania.
+                </div>
+                <img src="/img/frame.jpg" alt="" class="col-md-4 method-pic">
               </li>
               <div class="prefab">
                 <h5>budownictwo prefabrykowane</h5>
-                <li>
-                  PANELE<br>
-                  Konstrukcja domu w technologii panelowej dzieli się na kilka części - np. panele ścienne, panele dachowe, panele stropowe - które najpierw prefabrykowane są na hali produkcyjnej, a następnie na placu budowy scala się je w całość za pomocą specjalistycznych łączników. Panele mogą być w pełni wykończone - zarówno od wewnątrz, jak i zewnątrz - co redukuje czas prac na placu budowy do minimum.
-                </li>
-                <li>
-                  MODUŁY<br>
-                  Domki modułowe charakteryzują się konstrukcją w jednym elemencie - module. Maksymalne rozmiary pojedynczego modułu to XX x XXXm, co wynika z ograniczeń logistycznych. Jednak zaletą tej technologii jest fakt, iż pojedyncze moduły można dowolnie konfigurować - na miejscu budowy scalać kilka osobnych w jedną całość. Wystarczy do tego wózek widłowy, czy samochód z HDSem.
-                </li>
+                
+                  <li class="row">
+                    <div class="metod-list-text col-md-8">
+                      <h6>PANELE</h6><br>
+                      Konstrukcja domu w technologii panelowej dzieli się na kilka części - np. panele ścienne, panele dachowe, panele stropowe - które najpierw prefabrykowane są na hali produkcyjnej, a następnie na placu budowy scala się je w całość za pomocą specjalistycznych łączników. Panele mogą być w pełni wykończone - zarówno od wewnątrz, jak i zewnątrz - co redukuje czas prac na placu budowy do minimum.
+                    </div>
+                    <img src="/img/panel.jpg" alt="" class="col-md-4 method-pic">
+                  </li>
+                  <li class="row">
+                    <div class="metod-list-text col-md-8">
+                      <h6>MODUŁY</h6><br>
+                      Domki modułowe charakteryzują się konstrukcją w jednym elemencie - module. Maksymalne rozmiary pojedynczego modułu to XX x XXXm, co wynika z ograniczeń logistycznych. Jednak zaletą tej technologii jest fakt, iż pojedyncze moduły można dowolnie konfigurować - na miejscu budowy scalać kilka osobnych w jedną całość. Wystarczy do tego wózek widłowy, czy samochód z HDSem.
+                    </div>
+                    <img src="/img/modular.jpg" alt="" class="col-md-4 method-pic">
+                  </li>
+                  <div class="cons">poznaj więcej zalet budownictwa prefabrykowanego <span class="here">TUTAJ</span></div>
 
-                <div class="cons">poznaj więcej zalet budownictwa prefabrykowanego <span class="here">TUTAJ</span></div>
+                  </div>
+                  
+                </div>
               </div>
             </ul>
+            <div class="energy row">
+              <p><span class="number">2. Standardy energetyczne</span> - w zależności od potrzeb, oferujemy 3 warianty standardów energetycznych:</p>
+              <div class="standard col-md-4">
+                <div class="standard-box">
+                  <p class="header"><img src="/img/temperature1.gif" alt="" class="temp">ECO</p>
+                  <div class="standard-text">
+                    <p>domy letniskowe</p>
+                    <p>współczynniki przenikania ciepła U:</p>
+                    <p class="u">ściana: <span>U=0,2</span>W/m2K</p>
+                    <p class="u">dach: <span>U=0,2</span>W/m2K</p>
+                    <p class="u">podłoga: <span>U=0,2</span>W/m2K</p>
+                    <p>roczne zapotrzebowanie cieplne:</p>
+                    <p><span>120</span></p>
+                    <p>kWh/m2/rok</p>
+                  </div>
+                </div>
+              </div>
+              <div class="standard col-md-4">
+                <div class="standard-box">
+                  <p class="header"><img src="/img/temperature2.gif" alt="" class="temp">STANDARD</p>
+                  <div class="standard-text">
+                    <p>domy energooszczędne</p>
+                    <p>współczynniki przenikania ciepła U:</p>
+                    <p class="u">ściana: <span>U=0,2</span>W/m2K</p>
+                    <p class="u">dach: <span>U=0,2</span>W/m2K</p>
+                    <p class="u">podłoga: <span>U=0,2</span>W/m2K</p>
+                    <p>roczne zapotrzebowanie cieplne:</p>
+                    <p><span>40</span></p>
+                    <p>kWh/m2/rok</p>
+                  </div>
+                </div>
+              </div>
+              <div class="standard col-md-4">
+                <div class="standard-box">
+                  <p class="header"><img src="/img/temperature3.gif" alt="" class="temp">PREMIUM</p>
+                  <div class="standard-text">
+                    <p>domy pasywne</p>
+                    <p>współczynniki przenikania ciepła U:</p>
+                    <p class="u">ściana: <span>U=0,2</span>W/m2K</p>
+                    <p class="u">dach: <span>U=0,2</span>W/m2K</p>
+                    <p class="u">podłoga: <span>U=0,2</span>W/m2K</p>
+                    <p>roczne zapotrzebowanie cieplne:</p>
+                    <p><span>15</span></p>
+                    <p>kWh/m2/rok</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+          </div>
+        
+
 
       <div id="about-us" class="row">
         <div class="idea col-md-7">
@@ -135,7 +224,7 @@
           </div>
         <div class="info col-md-5">
           <div class="photo"><img src="img/grupa.jpg" alt="photo"></div>
-          <div class="text">Firma Scandy House powstała z myślą o ludziach, którzy chcą zaoszczędzić czas i pieniądze, a także cenią sobie ekologiczne rozwiązania,  dbając o środowisko naturalne. Współpracujemy z firmą Akrobud, która cechuje się prawie 30-letnim doświadczeniem w branży budownictwa drewnianego.
+          <div class="text">Firma Scandy House powstała z myślą o osobach, które chcą zaoszczędzić czas i pieniądze, a także cenią sobie ekologiczne rozwiązania,  dbając o środowisko naturalne. Współpracujemy z firmą Akrobud, która cechuje się prawie 30-letnim doświadczeniem w branży budownictwa drewnianego.
             Stosowana przez nas technologia cieszy się dużą popularnością w USA, Kanadzie, Niemczech, Austrii, Szwajcarii, Holandii czy Skandynawii. Posiadamy doświadczenie również na rynku zagranicznym, co pozwala na zastosowanie nowoczesnych rozwiązań praktykowanych w krajach zachodnio-europejskich.  
             Nasza kadra pracownicza składa się z wykwalifikowanych stolarzy, cieśli, inżynierów oraz pracowników budowlanych. Stawiamy na wysoką klasę materiałów, co przekłada się na dobry standard wykonania.
             Oferujemy domki całoroczne, domki letniskowe dla ośrodków wczasowych, budynki gospodarcze, pawilony handlowe, altany i wiele więcej.
@@ -173,7 +262,7 @@
             <textarea class="form-control" rows="10" placeholder="WIADOMOŚĆ.. *" name="message" required></textarea>
             
             <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-              <div class="button">
+              <div class="button--1">
                 <i class="fa fa-paper-plane"></i><span class="send-text">WYŚLIJ</span>
               </div>
             
