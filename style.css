@@ -24,7 +24,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
   }
   .header-area {
     background-image: url("img/stodola.jpg");
@@ -57,14 +57,17 @@
     font-weight: 800;
     color: rgb(19, 18, 18);
     text-decoration: none;
+    margin-right: 300px;
   }
   .site-navbar ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 500;
     font-size: 20px;
+    letter-spacing: 1px;
   }
   .site-navbar ul li a {
     color: #000;
@@ -268,6 +271,8 @@
   }
 
   h1 {
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 700;
     text-align: center;
     padding-bottom: 50px;
   }
@@ -284,6 +289,7 @@
   margin: 0 5%;
   padding-bottom: 80px;
   padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .arrow {
@@ -472,17 +478,20 @@ button #click {
 }
 
 .methods {
-
+ font-family: 'Roboto', sans-serif;
+ font-weight: 100;
 }
 
 .method-container {
   margin: 0;
   padding: 2%;
   background-color: rgba(243, 242, 242, 0.425);
+
 }
 
 .method-container li {
   margin-bottom: 20px;
+  
 }
 
 
