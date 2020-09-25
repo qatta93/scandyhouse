@@ -8,15 +8,16 @@
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
     <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Proza+Libre:wght@400;600;700&family=Lilita+One&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 <body>
-    <header class="header-area">
+    <header class="header-area" id="home">
         <!-- site-navbar start -->
         <div class="navbar-area">
           <div class="container">
             <nav class="site-navbar">
               <!-- site logo -->
-              <a href="#home" class="site-logo">ScandyHouse</a>
+              <a href="#home" class="site-logo"><img src="/grafika/logo.gif" alt="logo" class="logo">ScandyHouse</a>
       
               <!-- site menu/nav -->
               <ul>
@@ -25,7 +26,7 @@
                 <li><a href="#tech">technologia</a></li>
                 <li><a href="#about-us">o nas</a></li>
                 <li><a href="#contact">kontakt</a></li>
-                <li><a href="#">&nbsp; &nbsp;<img src="/img/flaga.jpg" alt="EN" title="EN">&nbsp; &nbsp;</a></li>
+                <li><a href="#">&nbsp; &nbsp;<img src="/img/flaga.jpg" alt="EN" title="EN" class="flag-img">&nbsp; &nbsp;</a></li>
               </ul>
       
               <!-- nav-toggler for mobile version only -->
@@ -53,15 +54,15 @@
       <div id="offer">
 
         <div class="intro row">
-          <div class="intro-col col-md-4">
+          <div class="intro-col col-sm-4">
             <div class="intro-col-container">
               <p>ZBUDUJ</p></br>
               <p>SWÓJ</p></br>
               <p>DOM</p>
             </div>
           </div>
-          <div class="vl col-md-1"></div>
-          <div class="intro-col col-md-7">
+          <div class="vl col-sm-1"></div>
+          <div class="intro-col col-sm-7">
             <div class="intro-col-box">
               <div class="intro-title">
                 CO &nbsp OFERUJEMY ?
@@ -81,7 +82,7 @@
             <div class="projects-header"><img src="/img/point.png" alt="arrow" class="arrow"><span>Gotowe projekty</span> domów na zgłoszenie - od zaraz na Twojej działce!</div>
           </div>
           <div class="houses-col row">
-            <div class="house-container col-md-4">
+            <div class="house-container col-sm-4">
               <div class="house">
                 <img src="/img/kostka.png" alt="" class="house-jpg">
                 <div class="house-title">
@@ -90,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="house-container col-md-4">
+            <div class="house-container col-sm-4">
               <div class="house">
                 <img src="/img/cube2i.jpg" alt="" class="house-jpg">
                 <div class="house-title">
@@ -99,7 +100,7 @@
                 </div>
               </div>
             </div>
-            <div class="house-container col-md-4">
+            <div class="house-container col-sm-4">
               <div class="house">
                 <img src="/img/stodola1.jpg" alt="" class="house-jpg">
                 <div class="house-title">
@@ -117,19 +118,19 @@
           </div>
           <div class="houses-col ">
             <div class="house-container-border row">
-              <div class="house-container col-md-5">
-                <div class="house--2">
+              <div class="house-container house-container--2 col-sm-4 col-md-5">
+                <div class="house--2 house--2-bcg">
                   <img src="/img/stodola2.jpg" alt="" class="jpg--2">
                 </div>
               </div>
-              <div class="house-container col-md-4">
+              <div class="house-container house-container--2 col-sm-4 col-md-4">
                 <div class="house--2"> 
                   <div class="steps"><img src="/img/number.png" alt="" class="number">Projekt architektoniczny </div>
                   <div class="steps"><img src="/img/number2.png" alt="" class="number">Wybór technologii</div>
                   <div class="steps"><img src="/img/number3.png" alt="" class="number">Wycena</div>
                 </div>
             </div>
-              <div class="house-container col-md-3">
+              <div class="house-container house-container--2 col-sm-4 col-md-3">
                 <div class="house--2">
                   <img src="/img/brain.png" alt="brain" class="brain">
                 </div>
@@ -186,59 +187,77 @@
             </div>
           </div>
         </div>
-        <div class="methods row">
-          <div class="scheme col-md-6">
-            <img src="/grafika/zolte.gif" alt="" class="scheme-pic">
-          </div>
-          <div class="method-container col-md-6">
+        <div class="methods-title row">
+          <div class="scheme-bcg col-md-6"></div>
+          <div class="methods-title-container col-md-6">
             <div class="method-title-box">
               <div class="method-title">1 . rodzaje montażu konstrukcji</div>
               <p>w zależności od gabarytów budynku oraz preferencji Inwestora, firma ScandyHouse ofertuje swoje konstrukcje w 3 formach:</p>
             </div>
+          </div>
+        </div>
+        <div class="methods row">
+          <div class="scheme col-12 col-xl-6">
+            <img src="/grafika/zolte.gif" alt="" class="scheme-pic">
+          </div>
+          <div class="method-container col-12 col-xl-6">
             <ul class="method-box">
               <li class="row">
-                <div class="metod-list-text col-md-8">
+                <div class="method-list-text col-sm-7 col-md-8">
                   <h6>DREWNIANY SZKIELET</h6>
                   <p>Zostać bohaterem swojego domu i złóż go niczym z klocków Lego!</br>
                   Gotowe elementy konstrukcji drewnianej (szkieletu) dostarczane są do Klienta razem z instrukcją montażu. Daje to możliwość oszczędzenia pieniędzy oraz wykończenia domku według własnego uznania.</p>
                 </div>
-                <div class="col-md-4 method-pic method-pic--1"></div>
+                <div class="col-md-4 col-sm-5 method-pic method-pic--1"></div>
               </li>
               <div class="prefab">
                 <h5>budownictwo prefabrykowane</h5>
                 
                   <li class="row">
-                    <div class="metod-list-text col-md-8">
+                    <div class="method-list-text col-sm-7 col-md-8">
                       <h6>PANELE</h6>
                       <p>Konstrukcja domu w technologii panelowej dzieli się na kilka części - np. panele ścienne, panele dachowe, panele stropowe - które najpierw prefabrykowane są na hali produkcyjnej, a następnie na placu budowy scala się je w całość za pomocą specjalistycznych łączników. Panele mogą być w pełni wykończone - zarówno od wewnątrz, jak i zewnątrz - co redukuje czas prac na placu budowy do minimum.</p>
                     </div>
-                    <div class="col-md-4 method-pic method-pic--2"></div>                  </li>
+                    <div class="col-md-4 col-sm-5 method-pic method-pic--2"></div>                  </li>
                   <li class="row">
-                    <div class="metod-list-text col-md-8">
+                    <div class="method-list-text col-sm-7 col-md-8">
                       <h6>MODUŁY</h6>
                       <p>Domki modułowe charakteryzują się konstrukcją w jednym elemencie - module. Maksymalne rozmiary pojedynczego modułu to XX x XXXm, co wynika z ograniczeń logistycznych. Należy pamiętać, że pojedyncze moduły można dowolnie konfigurować - na miejscu budowy scalać kilka osobnych w jedną całość. Wystarczy do tego wózek widłowy, czy samochód z HDSem.</p>
                     </div>
-                    <div class="col-md-4 method-pic method-pic--3"></div>                  </li>
-                  <div class="cons">poznaj więcej zalet budownictwa prefabrykowanego <span class="here">TUTAJ</span></div>
+                    <div class="col-md-4 col-sm-5 method-pic method-pic--3"></div>                  </li>
+                  <div class="cons"><p>poznaj więcej zalet budownictwa prefabrykowanego <a href=""><span class="here">TUTAJ</span></a></p></div>
 
                   </div>
                   
                 </div>
               </div>
             </ul>
-            <div class="energy row">
-              <p><span class="method-title">2 . standardy energetyczne</span> - w zależności od potrzeb, oferujemy 3 warianty standardów energetycznych:</p>
+            <div class="energy">
+              <p class="long-line"><span class="method-title">2 . standardy energetyczne</span> -  w zależności od potrzeb, oferujemy 3 warianty standardów energetycznych:</p>
+              <p class="short-line"><span class="method-title">2 . standardy energetyczne</span></br>w zależności od potrzeb, oferujemy 3 warianty standardów energetycznych:</p>
+              <div class="energy-bcg row">
               <div class="standard col-md-4">
                 <div class="standard-box">
                   <p class="header"><img src="/img/temperature1.gif" alt="" class="temp">ECO</p>
                   <div class="standard-text">
                     <p>domy letniskowe</p>
-                    <p>współczynniki przenikania ciepła U:</p>
-                    <p class="u">ściana: <span>U=0,2</span>W/m2K</p>
-                    <p class="u">dach: <span>U=0,2</span>W/m2K</p>
-                    <p class="u">podłoga: <span>U=0,2</span>W/m2K</p>
-                    <p>roczne zapotrzebowanie cieplne:</p>
-                    <p><span>120</span></p>
+                    <p>współczynniki przenikania ciepła U [ W/m2K ]</p>
+                    <ul class="term-list">
+                      <li class="row">
+                        <div class="term-type col-5">ściana</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                      <li class="row">
+                        <div class="term-type col-5">dach</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                      <li class="row">
+                        <div class="term-type col-5">podłoga</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                    </ul>
+                    <p>roczne zapotrzebowanie cieplne</p>
+                    <div class="energy-year">120</div>
                     <p>kWh/m2/rok</p>
                   </div>
                 </div>
@@ -248,12 +267,23 @@
                   <p class="header"><img src="/img/temperature2.gif" alt="" class="temp">STANDARD</p>
                   <div class="standard-text">
                     <p>domy energooszczędne</p>
-                    <p>współczynniki przenikania ciepła U:</p>
-                    <p class="u">ściana: <span>U=0,2</span>W/m2K</p>
-                    <p class="u">dach: <span>U=0,2</span>W/m2K</p>
-                    <p class="u">podłoga: <span>U=0,2</span>W/m2K</p>
-                    <p>roczne zapotrzebowanie cieplne:</p>
-                    <p><span>40</span></p>
+                    <p>współczynniki przenikania ciepła U [ W/m2K ]</p>
+                    <ul class="term-list">
+                      <li class="row">
+                        <div class="term-type col-5">ściana</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                      <li class="row">
+                        <div class="term-type col-5">dach</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                      <li class="row">
+                        <div class="term-type col-5">podłoga</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                    </ul>
+                    <p>roczne zapotrzebowanie cieplne</p>
+                    <div class="energy-year">40</div>
                     <p>kWh/m2/rok</p>
                   </div>
                 </div>
@@ -263,15 +293,27 @@
                   <p class="header"><img src="/img/temperature3.gif" alt="" class="temp">PREMIUM</p>
                   <div class="standard-text">
                     <p>domy pasywne</p>
-                    <p>współczynniki przenikania ciepła U:</p>
-                    <p class="u">ściana: <span>U=0,2</span>W/m2K</p>
-                    <p class="u">dach: <span>U=0,2</span>W/m2K</p>
-                    <p class="u">podłoga: <span>U=0,2</span>W/m2K</p>
-                    <p>roczne zapotrzebowanie cieplne:</p>
-                    <p><span>15</span></p>
+                    <p>współczynniki przenikania ciepła U [ W/m2K ]</p>
+                    <ul class="term-list">
+                      <li class="row">
+                        <div class="term-type col-5">ściana</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                      <li class="row">
+                        <div class="term-type col-5">dach</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                      <li class="row">
+                        <div class="term-type col-5">podłoga</div>
+                        <div class="u col-7">20</div>
+                      </li>
+                    </ul>
+                    <p>roczne zapotrzebowanie cieplne</p>
+                    <div class="energy-year">15</div>
                     <p>kWh/m2/rok</p>
                   </div>
                 </div>
+              </div>
               </div>
               </div>
             </div>
@@ -282,16 +324,26 @@
 
       <div id="about-us" class="row">
         <div class="idea col-md-7">
-          <h1 section-header>o nas</h1>
+          <div class="section-header">O NAS</div>
           <h3>Dlaczego my?</h3>
-           <div class="idea1">
-             <h2>idea 1</h2>
-             <p>lelum polelum</p>
+           <div class="plus-container">
+              <div class="plus-rows row">
+                <img src="/img/checked.png" alt="" class="plus-icon col-2">
+                <div class="plus col-10"><span>Park maszynowy</span>- lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ligula urna, vehicula vitae odio eget, interdum placerat nisl. Suspendisse condimentum molestie erat vitae aliquet. Ut accumsan condimentum lacus ut interdum. Maecenas aliquam sapien porta, faucibus lacus in, sagittis ligula. Donec interdum nunc in nunc congue faucibus.  </div>
+              </div>
+              <div class="plus-rows row">
+                <img src="/img/checked.png" alt="" class="plus-icon col-2">
+                <div class="plus col-10"><span>Prefabrykacja</span>- lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ligula urna, vehicula vitae odio eget, interdum placerat nisl. Suspendisse condimentum molestie erat vitae aliquet. Ut accumsan condimentum lacus ut interdum. Maecenas aliquam sapien porta, faucibus lacus in, sagittis ligula. Donec interdum nunc in nunc congue faucibus.  </div>
+              </div>
+              <div class="plus-rows row">
+                <img src="/img/checked.png" alt="" class="plus-icon col-2">
+                <div class="plus col-10"><span>Doświadczenie</span>- lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ligula urna, vehicula vitae odio eget, interdum placerat nisl. Suspendisse condimentum molestie erat vitae aliquet. Ut accumsan condimentum lacus ut interdum. Maecenas aliquam sapien porta, faucibus lacus in, sagittis ligula. Donec interdum nunc in nunc congue faucibus.  </div>
+              </div>
+              <div class="plus-rows row">
+                <img src="/img/checked.png" alt="" class="plus-icon col-2">
+                <div class="plus col-10"><span>Innowacja</span>- lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ligula urna, vehicula vitae odio eget, interdum placerat nisl. Suspendisse condimentum molestie erat vitae aliquet. Ut accumsan condimentum lacus ut interdum. Maecenas aliquam sapien porta, faucibus lacus in, sagittis ligula. Donec interdum nunc in nunc congue faucibus.  </div>
+              </div>
            </div>
-           <div class="idea2">
-            <h2>idea 2</h2>
-            <p>lelum polelum</p>
-          </div>
           </div>
         <div class="info col-md-5">
           <div class="photo"><img src="img/grupa.jpg" alt="photo"></div>
@@ -306,7 +358,7 @@
 
       <section id="contact">
   
-        <h1 class="section-header">KONTAKT</h1>
+        <div class="contact-header">KONTAKT</div>
         
         <div class="contact-wrapper">
           
@@ -375,8 +427,8 @@
       </section>  
 
       <div class="map row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39288.24127674363!2d20.59573888778686!3d52.01571361911509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba8bd108ebdce36b!2sAkrobud%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1599561328770!5m2!1spl!2spl" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="col-md-7"></iframe>
-        <div class="address col-md-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39288.24127674363!2d20.59573888778686!3d52.01571361911509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba8bd108ebdce36b!2sAkrobud%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1599561328770!5m2!1spl!2spl" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="col-12 col-md-7"></iframe>
+        <div class="address col-12 col-md-5">
           <p><span>ScandyHouse</span></br></br>
           ul. Zarzeczna 39</br>
           96-321 Słubica A</br>

@@ -43,7 +43,6 @@ $(function () {
 
 
 
-
 // Get the modal
 var modal = document.getElementById("myModal");
 var nav = document.getElementsByClassName("navbar-area");
@@ -76,5 +75,4 @@ window.onclick = function(event) {
     nav.style.display = "none !important";
   }
 }
-
 
