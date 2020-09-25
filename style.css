@@ -1279,7 +1279,6 @@ width: 100%;
 
 .method-pic {
 height: 100%;
-background-color: red;
 background-size: cover;
 background-position: center center;
 border: 1px solid rgb(199, 194, 194);
@@ -1310,7 +1309,7 @@ font-weight: 400;
 
 .energy-bcg {
   padding: 5% 0;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url(img/lightening.jpg);
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url('img/lightening.jpg');
   background-size:cover;
 }
 
