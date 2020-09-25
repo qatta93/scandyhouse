@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'Baskerville Old Face';
   src: 
-       url('/style/baskervi.woff') format('woff'),
-       url('/style/baskervi.ttf') format('truetype');
+       url('style/baskervi.woff') format('woff'),
+       url('style/baskervi.ttf') format('truetype');
 }
 
 
@@ -314,7 +314,7 @@ a.site-logo:focus {
 
 .info {
   /* background-color: rgba(202,213,219,.75); */
-  background:linear-gradient(0deg, rgba(247, 245, 245, 0.95), rgba(255, 255, 255, 0.95)), url(/img/scandy.jpg);
+  background:linear-gradient(0deg, rgba(247, 245, 245, 0.95), rgba(255, 255, 255, 0.95)), url(img/scandy.jpg);
   text-align: center;
 }
 
@@ -748,7 +748,7 @@ position: absolute;
     display: none;
   }
   .house--2-bcg {
-    background-image: url(/img/stodola2.jpg);
+    background-image: url(img/stodola2.jpg);
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -1286,15 +1286,15 @@ border: 1px solid rgb(199, 194, 194);
 }
 
 .method-pic--1 {
-background-image: url(img/frame.jpg);
+background-image: url('img/frame.jpg');
 }
 
 .method-pic--2 {
-background-image: url(img/panel.jpg);
+background-image: url('img/panel.jpg');
 }
 
 .method-pic--3 {
-background-image: url(img/modular.jpg);
+background-image: url('img/modular.jpg');
 }
 
 .energy p {
@@ -1310,7 +1310,7 @@ font-weight: 400;
 
 .energy-bcg {
   padding: 5% 0;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url(/img/lightening.jpg);
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url(img/lightening.jpg);
   background-size:cover;
 }
 
