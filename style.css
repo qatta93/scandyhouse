@@ -314,7 +314,7 @@ a.site-logo:focus {
 
 .info {
   /* background-color: rgba(202,213,219,.75); */
-  background:linear-gradient(0deg, rgba(247, 245, 245, 0.95), rgba(255, 255, 255, 0.95)), url(img/scandy.jpg);
+  background: linear-gradient(0deg, rgba(247, 245, 245, 0.95), rgba(255, 255, 255, 0.95)), url('img/scandy.jpg');
   text-align: center;
 }
 
