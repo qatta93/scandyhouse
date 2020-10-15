@@ -38,8 +38,8 @@ body {
   padding: 0;
 }
 .header-area {
-  background-image: url("img/stodola.jpg");
-  background-position: center center;
+  background-image: url("img/bcg.jpg");
+  background-position: right bottom;
   background-size: cover;
   height: 100vh;
 }
@@ -69,9 +69,9 @@ a.site-logo {
   text-decoration: none;
   color:  #5a5959;
 }
-a.site-logo:focus {
+a.site-logo:hover {
   text-decoration: none;
-  color:  #5a5959;
+  color:  #242323;
 }
 .logo {
   height: 50px;
@@ -174,10 +174,10 @@ a.site-logo:focus {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0rgba(177, 163, 113, 0.356);
+    -webkit-box-shadow: 0 0 0 0rgba(172, 165, 143, 0.356);
   }
   70% {
-      -webkit-box-shadow: 0 0 0 30px rgba(204,169,44, 0);
+      -webkit-box-shadow: 0 0 0 30px rgba(182, 176, 154, 0);
   }
   100% {
       -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
@@ -185,8 +185,8 @@ a.site-logo:focus {
 }
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0rgba(177, 163, 113, 0.356);
-    box-shadow: 0 0 0 0 rgba(177, 163, 113, 0.356);
+    -moz-box-shadow: 0 0 0 0rgba(172, 165, 143, 0.356);
+    box-shadow: 0 0 0 0 rgba(172, 165, 143, 0.356);
   }
   70% {
       -moz-box-shadow: 0 0 0 30px rgba(204,169,44, 0);
@@ -490,7 +490,7 @@ margin-top: 8%;
 }
 
 .houses-bcg {
-background-color:  rgba(108, 201, 170, 0.192);
+background-color:   rgba(204, 224, 241, 0.466);
 height: 70%;
 width: 100%;
 position: absolute;
@@ -521,7 +521,35 @@ transform: translate(-50%, -50%);
 height: 80%;
 width: 80%;
 border: 1px solid rgb(145, 142, 142);
+animation: pulsingg 1.3s infinite;
 }
+
+@-webkit-keyframes pulsingg {
+  0% {
+    -webkit-box-shadow: 0 0 0 0rgba(61, 61, 61, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 5px 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+  }
+  @keyframes pulsingg {
+  0% {
+    -moz-box-shadow: 0 0 0 0rgba(61, 61, 61, 0.4);
+    box-shadow: 0 0 0 0 rgba(212, 209, 209, 0.589);
+  }
+  70% {
+      -moz-box-shadow: 0 0 5px 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 5px 10px rgba(236, 236, 234, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+  }
+
 
 .house:hover {
 background-color: rgba(179, 178, 178, 0.205);
@@ -578,6 +606,10 @@ align-items: center;
 font-weight: 100;
 }
 
+.projects-header-media {
+  display: none;
+}
+
 .projects-header span,
 .projects-header--2 span {
 font-size: 25px;
@@ -594,7 +626,7 @@ margin-top: 8%;
 }
 
 .houses-bcg--2 {
-background-color: rgba(108, 201, 170, 0.192);
+background-color: rgba(204, 224, 241, 0.466);
 height: 70%;
 width: 100%;
 position: absolute;
@@ -624,14 +656,14 @@ margin: 0 !important;
 position: absolute;
 top: 50%;
 left: 50%;
-margin-right: -50%;
 transform: translate(-50%, -50%);
-height: 80%;
-width: 80%;
+height: 100%;
+width: 100%;
 }
 
 .jpg--2 {
 height: 100%;
+width: 90%;
 margin: 0;
 }
 
@@ -696,6 +728,9 @@ position: absolute;
     padding-top: 1%;
     margin-left: 15%;
     }
+    .house {
+      width: 90%;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -703,9 +738,15 @@ position: absolute;
     width: 85vw;
     height: 520px;
   }
+  .projects-header {
+    font-size: 17px;
+  }
+  .projects-header--2 {
+    font-size: 17px;
+  }
   .house {
-    width: 85%;
-    height: 70%;
+    width: 90%;
+    height: 68%;
     top: 60%;
   }
     .houses-box {
@@ -727,6 +768,9 @@ position: absolute;
   .intro-col-container {
     width: 100%;
   }
+    .intro-col-container p{
+      margin-left: 10%;
+    }
   .houses-box {
     margin-right: 0%;
     height: 320px;
@@ -748,7 +792,7 @@ position: absolute;
     display: none;
   }
   .house--2-bcg {
-    background-image: url(img/stodola2.jpg);
+    background-image: url(img/special.jpg);
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -790,6 +834,12 @@ position: absolute;
 }
 
 @media screen and (max-width: 670px) {
+.intro-title {
+  font-size: 20px;
+}
+.intro-text {
+  font-size: 16px;
+}
 .houses-bcg {
   height: 60%;
 }
@@ -828,17 +878,18 @@ position: absolute;
    padding-top: 0;
  }
   .intro {
-   height: 300px;
+   height: 320px;
  }
  .intro-col-container p {
-   font-size: 100%;
+   font-size: 90%;
    letter-spacing: 7px;
+   margin: 0;
  }
  .intro-col-container p:nth-of-type(2) {
-  font-size: 160%;
+  font-size: 150%;
   }
   .intro-col-container p:last-child {
-  font-size: 220%;
+  font-size: 210%;
   margin-top: 1%;
   }
   .intro-col {
@@ -849,19 +900,39 @@ position: absolute;
     width: 100%;
     margin-top: 50px;
   }
+  .projects-header {
+    font-size: 16px;
+    text-align: center;
+  }
+  .projects-header-media {
+    display: inline-block;
+  }
+  .projects-header--2 {
+    display: none;
+  }
+  .houses-col {
+    padding-top: 15%;
+  }
   .houses-box {
-    margin: 400px 0 0 0;
+    margin: 450px 0 0 0;
   }
   .houses-box--2 {
-    margin: 800px 0 0 0;
+    margin: 730px 0 0 0;
     height: 600px;
   }
   .house-container--2 {
     height: 300px;
     padding: 0;
   }
+  .house {
+    width: 80%;
+    height: 90%;
+  }
+  .house-container {
+    height: 300px;
+  }
   .house--2 {
-    top: 20%;
+    top: 10%;
     margin: 0 auto;
     width: 100%;
   }
@@ -875,10 +946,11 @@ position: absolute;
   .steps {
     margin: 0 auto;
     width: 85%;
-    padding-left: 17%;
+    padding-left: 23%;
   }
   .brain {
     margin: 0 auto;
+    height: 150px;
   }
 }
 
@@ -889,9 +961,71 @@ position: absolute;
   .houses-box {
     margin: 550px 0 0 0;
   }
+  .house {
+    width: 100%;
+    border: none;
+    animation: 0s;
+  }
   .house-container--2 {
     height: 200px;
     padding: 0;
+  }
+  .arrow {
+    display: none;
+  }
+  .intro-col-container p {
+    font-size: 60%;
+  }
+  .intro-col-container p:nth-of-type(2) {
+   font-size: 110%;
+   }
+   .intro-col-container p:last-child {
+   font-size: 170%;
+   }
+   .steps {
+     padding: 12% 0 10% 15%;
+   }
+   .houses-box--2 {
+     margin-top: 700px;
+   }
+   .brain {
+     margin-top: 15%;
+   }
+}
+
+@media screen and (max-width: 350px) {
+  .intro-col-box {
+    margin-top: 130px;
+  }
+    a.site-logo {
+    font-size: 20px;
+  }
+  .logo {
+    height: 40px;
+  }
+  .intro-title {
+    font-size: 17px;
+  }
+  .brain {
+    margin-top: 5%;
+    height: 130px;
+  }
+  .houses-box {
+    margin-top: 600px;
+  }
+  .projects-header {
+    padding: 0 5%;
+  }
+  .house--2 {
+    top: 0%;
+  }
+}
+@media screen and (max-width: 300px) {
+  a.site-logo {
+    font-size: 17px;
+  }
+  .intro-title {
+    font-size: 15px;
   }
 }
 
@@ -986,11 +1120,11 @@ color: white;
 #realisation {
 height: 400px;
 background-image:
-linear-gradient(to bottom, rgba(245, 246, 252, 0.247), rgba(31, 31, 31, 0.829)),
-url('img/realisation.jpg');
+linear-gradient(to bottom, rgba(77, 77, 77, 0.76), rgba(0, 0, 0, 0.705)),
+url('img/real.jpg');
 background-size: cover;
 background-repeat: no-repeat;
-background-position: center center;
+background-position: center bottom;
 position: relative;
 margin-top: 7%;
 }
@@ -1021,7 +1155,7 @@ font-family: 'Roboto', sans-serif;
 letter-spacing: 5px;
 font-weight: 100;
 font-size: 20px;
-animation: pulsing 1.5s infinite;
+animation: pulsing 1.3s infinite;
 }
 
 
@@ -1039,7 +1173,7 @@ animation: pulsing 1.5s infinite;
 @keyframes pulsing {
 0% {
   -moz-box-shadow: 0 0 0 0rgba(61, 61, 61, 0.4);
-  box-shadow: 0 0 0 0 rgba(61, 61, 61, 0.4);
+  box-shadow: 0 0 0 0 rgba(114, 114, 114, 0.4);
 }
 70% {
     -moz-box-shadow: 0 0 0 30px rgba(204,169,44, 0);
@@ -1070,20 +1204,36 @@ animation: pulsing 1.5s infinite;
 
 @media screen and (max-width: 576px) {
   .realisation-btn {
-    width: 40%;
-    font-size: 25px;
+    width: 38%;
+    font-size: 23px;
   }
   #realisation {
-    margin-top: 400px;
+    margin-top: 300px;
+    height: 290px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .realisation-btn {
-    width: 50%;
+    width: 52%;
   }
   #realisation {
-    margin-top: 150px;
+    margin-top: 120px;
+  }
+  .realisation-header {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .realisation-btn {
+    width: 55%;
+  }
+  #realisation {
+    margin-top: 60px;
+  }
+  .realisation-header {
+    font-size: 30px;
   }
 }
 
