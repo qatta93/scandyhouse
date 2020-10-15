@@ -397,6 +397,16 @@ h3 {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .plus-icon {
+      display: none;
+    }
+    .plus-rows {
+      padding: 0 5%;
+      width: 100%;
+    }
+}
+
     /*  OFFER ********************************************************************/
 
 #offer {
@@ -1357,6 +1367,8 @@ margin: 3%;
 .short-line {
   display: none;
   line-height: 40px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 .methods {
@@ -1692,9 +1704,11 @@ font-weight: 500;
     }
     .scheme-pic {
       margin-top: 100px;
+      border: none;
     }
     .method-container {
       margin-top: 70%;
+      border: none;
     }
     .prefab .row {
       height: 340px;
@@ -1715,15 +1729,86 @@ font-weight: 500;
   .scheme-pic {
     margin-top: 50px;
   }
+  .tech-intro-title {
+    font-size: 35px;
+  }
+  #tech {
+    margin-top: 80px;
+  }
 }
 
 
 @media screen and (max-width: 576px) {
-
+  .tech-intro-jpg {
+    display: none;
+    }
+  .tech-intro-title {
+   width: 100%;
+  }
+  .tech-intro-box {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.986), rgba(250, 249, 249, 0.952)),
+    url('/img/wood.jpg');
+  background-size: cover;
+  width: 100%;
+  text-align: justify;
+  line-height: 30px;
+  }
+  .scheme-pic {
+    margin-top: 2%;
+  }
+.method-box .row {
+  height: 100%;
+  padding: 2%;
+}
+.method-pic {
+  margin: 0 auto;
+  width: 70% !important;
+  height: 260px;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid rgb(199, 194, 194);
+  }
+.method-list-text {
+  text-align: center;
+  padding: 0 3% !important;
+}
+h6 {
+  padding: 2% 0 !important;
+  }
+  .short-line {
+    width: 100%;
+    padding: 0 10% !important;
+  }
+  .standard-box {
+    width: 70%;
+    margin-bottom: 7%;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .tech-intro {
+    height: 480px;
+    }
+  .tech-intro-col {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .standard-box {
+    width: 85%;
+  }
+}
 
+@media screen and (max-width: 370px) {
+  .tech-intro {
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .tech-intro {
+    height: 550px;
+  }
 }
 
 
@@ -1989,14 +2074,15 @@ border-color: rgba(255,255,255,.8); ;
 } 
 .direct-contact-container {
   margin-top: 60px;
-  max-width: 280px;
+  max-width: 350px;
+  text-align: center;
 }  
 .social-media-list {
   left: 0;
 }
 .social-media-list li {
-  height: 55px;
-  width: 55px;
+  height: 65px;
+  width: 65px;
   line-height: 55px;
   font-size: 2rem;
 }
@@ -2005,7 +2091,6 @@ border-color: rgba(255,255,255,.8); ;
   height: 55px;
   line-height: 55px;
 }
-
 }
 
 @media screen and (max-width: 410px) {
