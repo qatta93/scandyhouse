@@ -18,8 +18,8 @@
 html {
   width: 100%;
   overflow-x: hidden !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 body{
   font-family: 'Source Sans Pro', sans-serif !important;
@@ -27,6 +27,7 @@ body{
   font-weight: 400;
   line-height: 20px;
   color:  #5a5959;
+  overflow-x: hidden !important;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -48,6 +49,10 @@ body {
 .header-area {
   background-image: url("img/bcg.jpg");
   background-position: right bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
 }
@@ -178,6 +183,8 @@ a.site-logo:hover {
   height: 70%;
   border-radius: 10px;
   animation: pulse 1.3s infinite;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1.3s;
 }
 
 @-webkit-keyframes pulse {
@@ -560,6 +567,8 @@ height: 80%;
 width: 80%;
 border: 1px solid rgb(145, 142, 142);
 animation: pulsingg 1.3s infinite;
+  -webkit-animation-name: pulsingg;
+  -webkit-animation-duration: 1.3s;
 }
 
 @-webkit-keyframes pulsingg {
@@ -833,6 +842,10 @@ position: absolute;
     background-image: url(img/special.jpg);
     width: 100%;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position: center center;
     top: 50%;
   }
@@ -945,6 +958,7 @@ position: absolute;
   }
   .projects-header-media {
     display: inline-block;
+    padding-left: 3.6%;
   }
   .projects-header--2 {
     display: none;
@@ -952,7 +966,10 @@ position: absolute;
   .houses-col {
     padding-top: 15%;
   }
-
+  .houses-bcg--2 {
+    padding-right: 0;
+    padding-left: 3.6% !important;
+  }
   .houses-box {
     margin: 450px 0 0 0;
   }
@@ -1005,6 +1022,7 @@ position: absolute;
     width: 100%;
     border: none;
     animation: 0s;
+    -webkit-animation-duration: 0s;
   }
   .house--2 {
     top: 10%;
@@ -1073,26 +1091,12 @@ position: absolute;
 }
 
 /*  POP UP ********************************************************************/
-button #click {
-background-color: rgba(228, 228, 228, 0.315);
-background-repeat:no-repeat;
-border: none;
-cursor:pointer;
-overflow: hidden;
-outline:none;
-box-shadow: none;
-opacity: none;
-width: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
-}
 /* The Modal (background) */
 .modal {
 display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 9999999999999999; /* Sit on top */
-padding-top: 100px; /* Location of the box */
+padding-top: 200px; /* Location of the box */
 left: 0;
 top: 0;
 width: 100vw; /* Full width */
@@ -1107,7 +1111,8 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 background-color: #fefefe;
 margin: 0 10%;
 border: 1px solid #888;
-width: 50vw;
+width: 80% !important;
+margin: 0 auto;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 -webkit-animation-name: animatetop;
 -webkit-animation-duration: 0.4s;
@@ -1130,7 +1135,7 @@ to {top:0; opacity:1}
 .close {
 color: white;
 float: right;
-font-size: 28px;
+font-size: 10px;
 font-weight: bold;
 }
 
@@ -1143,19 +1148,41 @@ cursor: pointer;
 
 .modal-header {
 padding: 2px 16px;
-background-color: #5cb85c;
+background-color: rgb(90, 189, 165);
 color: white;
 }
 
 .modal-body {
 padding: 2px 16px;
 margin: 0 10%;
+height: 300px;
+}
+
+.slides {
+  height: 200px;
+  width: 200px;
+  margin: auto 0;
+}
+
+.set {
+  text-align: center;
+  background-color: rgb(235, 233, 233);
+}
+
+.mySlides {
+  height: 100%;
+  width: 100%;
 }
 
 .modal-footer {
 padding: 2px 16px;
-background-color: #5cb85c;
+background-color:rgb(90, 189, 165);
 color: white;
+}
+
+h2 {
+  width: 100%;
+  float: left;
 }
 
 /*  REALISATION ********************************************************************/
@@ -1165,6 +1192,10 @@ height: 400px;
 background-image:
 linear-gradient(to bottom, rgba(77, 77, 77, 0.76), rgba(0, 0, 0, 0.705)),
 url('img/real.jpg');
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center bottom;
@@ -1199,6 +1230,8 @@ letter-spacing: 5px;
 font-weight: 100;
 font-size: 20px;
 animation: pulsing 1.3s infinite;
+-webkit-animation-name: pulsing;
+-webkit-animation-duration: 1.3s;
 }
 
 
@@ -1379,6 +1412,10 @@ height: 100%;
   url('img/scheme-bcg.jpg');
   background-position: center top;
   background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   border-right: 3px solid rgb(226, 223, 223);
   padding: 0 !important;
 }
@@ -1483,6 +1520,10 @@ width: 100%;
 .method-pic {
 height: 100%;
 background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 background-position: center center;
 border: 1px solid rgb(199, 194, 194);
 }
@@ -1514,6 +1555,15 @@ font-weight: 400;
   padding: 5% 0;
   background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url('img/lightening.jpg');
   background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.energy-bcg.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .standard {
@@ -1805,8 +1855,12 @@ font-weight: 500;
   .tech-intro-box {
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.986), rgba(250, 249, 249, 0.952)),
-    url('/img/wood.jpg');
+    url('img/wood.jpg');
   background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   width: 100%;
   text-align: justify;
   line-height: 30px;

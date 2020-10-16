@@ -83,7 +83,7 @@
           </div>
           <div class="houses-col row">
             <div class="house-container col-sm-4">
-              <div class="house">
+              <div class="house" id="click">
                 <img src="img/kostka.png" alt="" class="house-jpg">
                 <div class="house-title">
                   <p>domek 1</p>
@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="house-container col-sm-4">
-              <div class="house">
+              <div class="house" id="click">
                 <img src="img/stodola1.jpg" alt="" class="house-jpg">
                 <div class="house-title">
                   <p>domek 2</p>
@@ -101,7 +101,7 @@
               </div>
             </div>
             <div class="house-container col-sm-4">
-              <div class="house">
+              <div class="house" id="click">
                 <img src="img/skos.jpg" alt="" class="house-jpg">
                 <div class="house-title">
                   <p>domek 3</p>
@@ -150,15 +150,20 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
+      <h2>Domek 1 - CUBE</h2>
       <span class="close">&times;</span>
-      <h2>Modal Header</h2>
     </div>
-    <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+    <div class="modal-body row">
+      <div class="slides col-lg-4">
+        <img class="mySlides" src="img/cube.jpg">
+        <img class="mySlides" src="img/cube2.jpg">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <div class="set col-lg-4">pakiet 1</div>
+      <div class="set col-lg-4">pakiet 2</div>
     </div>
     <div class="modal-footer">
-      <h3>Modal Footer</h3>
     </div>
   </div>
 
