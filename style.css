@@ -1096,22 +1096,23 @@ position: absolute;
 display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 9999999999999999; /* Sit on top */
-padding-top: 200px; /* Location of the box */
+padding-top: 80px; /* Location of the box */
 left: 0;
 top: 0;
 width: 100vw; /* Full width */
-height: 100vh; /* Full height */
-overflow: auto; /* Enable scroll if needed */
+height: 100%; /* Full height */
+overflow: scroll;
 background-color: rgb(0,0,0); /* Fallback color */
 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
+overflow-y: auto;
 background-color: #fefefe;
 margin: 0 10%;
 border: 1px solid #888;
-width: 80% !important;
+width: 95% !important;
 margin: 0 auto;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 -webkit-animation-name: animatetop;
@@ -1119,6 +1120,10 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 animation-name: animatetop;
 animation-duration: 0.4s
 }
+
+::-webkit-scrollbar {
+  display: none;
+  }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -1135,7 +1140,7 @@ to {top:0; opacity:1}
 .close {
 color: white;
 float: right;
-font-size: 10px;
+font-size: 30px !important;
 font-weight: bold;
 }
 
@@ -1155,23 +1160,52 @@ color: white;
 .modal-body {
 padding: 2px 16px;
 margin: 0 10%;
-height: 300px;
+height: 420px;
 }
 
 .slides {
-  height: 200px;
-  width: 200px;
-  margin: auto 0;
+  height: 100%;
+}
+
+.mySlides {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .set {
   text-align: center;
   background-color: rgb(235, 233, 233);
+  position: relative;
+  border-right: 1px solid rgb(212, 209, 209);
+  color: #5a5959;
 }
 
-.mySlides {
-  height: 100%;
-  width: 100%;
+.set-header {
+  margin-top: 7%;
+}
+
+.set-list {
+  text-align: left;
+  padding: 7% 7%;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.set-price {
+  position: absolute;
+  bottom: 0;
+  background-color:  #aaaaaa;
+  height: 40px;
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  font-weight: 600;
+}
+
+.set-price p {
+  line-height: 40px;
 }
 
 .modal-footer {
@@ -1184,6 +1218,136 @@ h2 {
   width: 100%;
   float: left;
 }
+
+.w3-button {
+  width: 35px;
+  height: 30px;
+  border: none;
+  font-weight: 800;
+  color: rgb(59, 59, 59);
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+.w3-button:active {
+  border: none;
+}
+
+.w3-display-left {
+ position: absolute;
+ top: 50%;
+ left: 10%;
+}
+
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+ }
+
+@media screen and (max-width: 1300px) {
+.modal-content {
+  width: 100% !important;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-content {
+    width: 80% !important;
+  }
+  .set {
+    margin-top: 5%;
+  }
+  .set-header {
+    font-size: 20px;
+  }
+  .set-list {
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+  .set-price {
+    margin-top: 20px !important;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      width: 100% !important;
+    }
+  }
+
+    @media screen and (max-width: 576px) {
+    .modal-content {
+      width: 80% !important;
+    }
+    .slides {
+      padding: 0 2% !important;
+      height: 80%;
+    }
+    .set {
+      padding: 0 !important;
+    }
+    .set-header {
+      font-size: 25px;
+    }
+    .mySlides {
+      width: 100%;
+      height: 100%;
+    }
+    .set-list {
+      text-align: center;
+      list-style: none;
+      font-size: 18px;
+    }
+    .set-price {
+      width: 100%;
+      font-size: 20px;
+    }
+    .w3-display-left {
+      left: 5%;
+     }
+     
+     .w3-display-right {
+       right: 5%;
+      }
+      .w3-button {
+        width: 45px;
+        height: 40px;
+        font-size: 20px;
+      }
+  }
+
+  @media screen and (max-width: 576px) {
+    .slides {
+      padding: 0 2% !important;
+      height: 70%;
+    }
+    .modal-content {
+      width: 90% !important;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .slides {
+      padding: 0 2% !important;
+      height: 60%;
+    }
+    .modal-content {
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .slides {
+      padding: 0 2% !important;
+      height: 50%;
+    }
+    .modal-content {
+      width: 100% !important;
+    }
+  }
+
+
 
 /*  REALISATION ********************************************************************/
 
@@ -1232,6 +1396,14 @@ font-size: 20px;
 animation: pulsing 1.3s infinite;
 -webkit-animation-name: pulsing;
 -webkit-animation-duration: 1.3s;
+}
+
+.realisation-modal {
+  height: 100px;
+  width: 500px;
+  background-color: red;
+  display: none;
+  z-index: 99999999;
 }
 
 
