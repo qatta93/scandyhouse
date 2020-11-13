@@ -39,6 +39,10 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 
 .container {
   width: 100%;
@@ -48,7 +52,7 @@ body {
 }
 .header-area {
   background-image: url("img/bcg.jpg");
-  background-position: right bottom;
+  background-position: center top;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -63,7 +67,7 @@ body {
 .navbar-area {
   position: fixed;
   width: 100vw;
-  /* background: rgba(255, 255, 255, 0.795); */
+  background: rgba(255, 255, 255, 0.733);
   border-bottom: 1px solid #5a5959;;
   z-index: 999999;
 }
@@ -180,7 +184,7 @@ a.site-logo:hover {
 }
 
 .intro-button img {
-  height: 70%;
+  height: 90%;
   border-radius: 10px;
   animation: pulse 1.3s infinite;
     -webkit-animation-name: pulse;
@@ -1398,12 +1402,101 @@ animation: pulsing 1.3s infinite;
 -webkit-animation-duration: 1.3s;
 }
 
-.realisation-modal {
-  height: 100px;
-  width: 500px;
-  background-color: red;
-  display: none;
-  z-index: 99999999;
+/* REALISATION POP UP */
+/* The Modal (background) */
+.modal--4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* The Close Button */
+.close--4 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close--4:hover,
+.close--4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Modal Header */
+.modal-header--4 {
+  height: 60px;
+  padding: 2px 16px;
+  background-color: rgb(90, 189, 165);
+  color: white;
+  position: relative;
+}
+
+.modal-header--4 h2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* Modal Body */
+.modal-body--4 {
+  padding: 2px 16px;
+  height: 40vh;
+  position: relative;
+}
+
+.modal-body--4 p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 45%;
+  font-size: 20px;
+}
+
+/* Modal Footer */
+.modal-footer--4 {
+  padding: 2px 16px;
+  background-color: rgb(90, 189, 165);
+  color: white;
+  height: 20px;
+}
+
+/* Modal Content */
+.modal-content--4 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 200px;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
 
@@ -1458,6 +1551,9 @@ animation: pulsing 1.3s infinite;
   #realisation {
     margin-top: 300px;
     height: 290px;
+  }
+  .modal-content--4 {
+    width: 100% !important;
   }
 }
 
@@ -1844,6 +1940,12 @@ font-weight: 500;
   position: relative;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-width: 1800px) {
+  .scheme-pic {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 1500px) {
