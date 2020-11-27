@@ -90,13 +90,14 @@ $(document).keydown(function(e) {
 
 
 
-//slides
+//slides CUBE
 
 var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  console.log("slideIndex: " + slideIndex);
+   showDivs(slideIndex += n);
 }
 
 function showDivs(n) {
@@ -108,6 +109,52 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+}
+
+//slides SIMPLE
+
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  console.log("slideIndex2: " + slideIndex2);
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides--2");
+  console.log("x.leng: " + x.length + ", n: " + n);
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length};
+  console.log("n: " + n);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex2 - 1].style.display = "block";
+}
+
+//slides GLAZED
+
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+  console.log("slideIndex3: " + slideIndex3);
+  showDivs3(slideIndex3 += n);
+}
+
+function showDivs3(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides--3");
+  console.log("x.leng: " + x.length + ", n: " + n);
+  if (n > x.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = x.length};
+  console.log("n: " + n);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex3 - 1].style.display = "block";
 }
 
 
