@@ -374,6 +374,38 @@ a.site-logo:hover {
     margin-right: 2%;
   }
 
+  .plus-rows-pics {
+    width: 100%;
+    margin: 0 auto !important;
+  }
+
+  .cnc {
+    height: 150px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cnc-pic {
+    height: 90%;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .cnc-pic--1 {
+    background-image: url(img/cnc1.jpg);
+  }
+
+  .cnc-pic--2 {
+    background-image: url(img/cnc2.jpg);
+  }
+
+  .cnc-pic--3 {
+    background-image: url(img/cnc3.jpg);
+  }
+
 .photo {
   margin: 0 auto;
   margin-top: 60px;
@@ -409,6 +441,16 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .cnc {
+    padding: 0 !important;
+  }
+
+  .cnc-pic {
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 950px) and (min-width: 768px) {
   .plus-rows {
     padding-left: 1% !important;
@@ -427,6 +469,9 @@ h3 {
     }
     .plus-icon {
       height: 60px;
+    }
+    .cnc {
+      height: 120px;
     }
 }
 
