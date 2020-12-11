@@ -86,7 +86,11 @@ $(document).keydown(function(e) {
   if (e.keyCode == 27) {
     modal.style.display = "none";
   }
+  if (e.keyCode == 27) {
+    btn.style.display = "block";
+  }
 });
+
 
 
 
@@ -110,6 +114,8 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+
 
 //slides SIMPLE
 
@@ -158,6 +164,7 @@ function showDivs3(n) {
 }
 
 
+
 /////////////////////// MODAL 2 POP UP - SIMPLE
 // Get the modal
 var modal2 = document.getElementById("myModal2");
@@ -201,7 +208,11 @@ $(document).keydown(function(e) {
   if (e.keyCode == 27) {
     modal2.style.display = "none";
   }
+  if (e.keyCode == 27) {
+    btn2.style.display = "block";
+  }
 });
+
 
 
 /////////////////////// MODAL 3 POP UP - GLAZED
@@ -247,7 +258,11 @@ $(document).keydown(function(e) {
   if (e.keyCode == 27) {
     modal3.style.display = "none";
   }
+  if (e.keyCode == 27) {
+    btn3.style.display = "block";
+  }
 });
+
 
 
 // // REALISATION POP UP
@@ -259,7 +274,7 @@ var modal4 = document.getElementById("myModal--4");
 var btn4 = document.getElementById("myBtn--4");
 
 // Get the <span> element that closes the modal
-var span4 = document.getElementsByClassName("close4");
+var span4 = document.getElementsByClassName("close4")[0];
 
 // When the user clicks on the button, open the modal
 btn4.onclick = function() {
@@ -267,9 +282,11 @@ btn4.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span4.onclick = function() {
-  modal4.style.display = "none";
-}
+
+// span4.onclick = function() {
+//   modal4.style.height = "none !important";
+//   btn4.style.display = "block";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -285,4 +302,31 @@ $(document).keydown(function(e) {
     modal4.style.display = "none";
   }
 });
+
+
+
+
+
+// realisations slides
+
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+
+function plusDivs4(n) {
+  console.log("slideIndex2: " + slideIndex4);
+  showDivs4(slideIndex4 += n);
+}
+
+function showDivs4(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides--4");
+  console.log("x.leng: " + x.length + ", n: " + n);
+  if (n > x.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = x.length};
+  console.log("n: " + n);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex4 - 1].style.display = "block";
+}
 

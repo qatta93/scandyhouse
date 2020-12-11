@@ -96,11 +96,11 @@
                     </div>
                     <div class="house-info-text col-10">biuro ogrodowe</div>
                   </div>
-                  <div class="house-info-row row">
+                  <div class="house-info-row house-info-row--size-cube row">
                     <div class="house-info-icon col-2">
                       <img src="img/size.png" class="house-information-icon" alt=""> 
                     </div>
-                    <div class="house-info-text col-10">pow. zabudowy: 11,92 m2</div>
+                    <div class="house-info-text col-10">pow. zabudowy: 11,92 m<sup>2</sup></div>
                   </div>
                   <div class="house-info-row row">
                     <div class="house-info-icon col-2">
@@ -112,7 +112,7 @@
                     <div class="house-info-price col-12">od 5000 PLN</div>
                   </div>
                   <div class="house-info-row row">
-                    <div class="house-info-check col-12">SPRAWDŹ</div>
+                    <div class="house-info-check col-12"><b>SPRAWDŹ</b></div>
                   </div>
                 </div>
               </div>
@@ -131,9 +131,9 @@
                     </div>
                     <div class="house-info-text col-10">domek całoroczy</div>
                   </div>
-                  <div class="house-info-row row">
+                  <div class="house-info-row house-info-row--rooms row">
                     <div class="house-info-icon col-2">
-                      <img src="img/room.png" class="house-information-icon" alt=""> 
+                      <img src="img/room.png" class="house-information-icon house-information-icon--room" alt=""> 
                     </div>
                     <div class="house-info-text col-10">salon, kuchnia, sypialnia, łazienka, antresola</div>
                   </div>
@@ -143,11 +143,11 @@
                     </div>
                     <div class="house-info-text col-10">max. 6 osób</div>
                   </div>
-                  <div class="house-info-row row">
+                  <div class="house-info-row house-info-row--size row">
                     <div class="house-info-icon col-2">
                       <img src="img/size.png" class="house-information-icon" alt=""> 
                     </div>
-                    <div class="house-info-text col-10">pow. zabudowy: 35 m2, wys. 5m</div>
+                    <div class="house-info-text col-10">pow. zabudowy: 35 m<sup>2</sup>, wys. 5m</div>
                   </div>
                   <div class="house-info-row row">
                     <div class="house-info-icon col-2">
@@ -159,7 +159,7 @@
                     <div class="house-info-price col-12">od 14500 PLN</div>
                   </div>
                   <div class="house-info-row row">
-                    <div class="house-info-check col-12">SPRAWDŹ</div>
+                    <div class="house-info-check col-12"><b>SPRAWDŹ</b></div>
                   </div>
                 </div>
               </div>
@@ -178,9 +178,9 @@
                     </div>
                     <div class="house-info-text col-10">domek całoroczy</div>
                   </div>
-                  <div class="house-info-row row">
+                  <div class="house-info-row house-info-row--rooms row">
                     <div class="house-info-icon col-2">
-                      <img src="img/room.png" class="house-information-icon" alt=""> 
+                      <img src="img/room.png" class="house-information-icon house-information-icon--room" alt=""> 
                     </div>
                     <div class="house-info-text col-10">salon, kuchnia, sypialnia, łazienka, antresola</div>
                   </div>
@@ -190,11 +190,11 @@
                     </div>
                     <div class="house-info-text col-10">max. 6 osób</div>
                   </div>
-                  <div class="house-info-row row">
+                  <div class="house-info-row house-info-row--size row">
                     <div class="house-info-icon col-2">
                       <img src="img/size.png" class="house-information-icon" alt=""> 
                     </div>
-                    <div class="house-info-text col-10">pow. zabudowy: 35 m2, wys. 5m</div>
+                    <div class="house-info-text col-10">pow. zabudowy: 35 m<sup>2</sup>, wys. 5m</div>
                   </div>
                   <div class="house-info-row row">
                     <div class="house-info-icon col-2">
@@ -206,7 +206,7 @@
                     <div class="house-info-price col-12">od 14500 PLN</div>
                   </div>
                   <div class="house-info-row row">
-                    <div class="house-info-check col-12">SPRAWDŹ</div>
+                    <div class="house-info-check col-12"><b>SPRAWDŹ</b></div>
                   </div>
                 </div>
               </div>
@@ -391,6 +391,7 @@
     <div class="modal-body row">
       <div class="slides col-sm-12 col-xl-6">
         <img class="mySlides--3" src="img/stodola12.jpg">
+        <img class="mySlides--3" src="img/stodola22.jpg">
         <img class="mySlides--3" src="img/rzut2.jpg">
         <img class="mySlides--3" src="img/rzut22.jpg">
         <img class="mySlides--3" src="img/przekroj1.jpg">
@@ -462,12 +463,21 @@
 
         <!-- Modal content -->
           <div class="modal-content--4">
+    
             <div class="modal-header--4">
-              <!-- <div class="close4">&times;</div> -->
+              <!-- <span id="closee" class="close4">&times;</span> -->
               <h2>REALIZACJE</h2>
             </div>
             <div class="modal-body--4">
-              <p>Strona w rozbudowie. Zapraszamy wkrótce.</p>
+                <div class="realisation-slides">
+                  <img class="mySlides--4" src="img/real5.jpg">
+                  <img class="mySlides--4" src="img/real3.jpg">
+                  <img class="mySlides--4" src="img/real2.jpg">
+                  <img class="mySlides--4" src="img/real1.jpg">
+                  <img class="mySlides--4" src="img/real4.jpg">
+                  <button class="w3-button w3-button--real w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
+                  <button class="w3-button w3-button--real w3-display-right" onclick="plusDivs4(+1)">&#10095;</button>
+              </div>
             </div>
             <div class="modal-footer--4">
             </div>
@@ -551,7 +561,7 @@
                   <p class="header"><img src="img/temperature1.gif" alt="" class="temp">ECO</p>
                   <div class="standard-text">
                     <p>domy letniskowe</p>
-                    <p>współczynniki przenikania ciepła U [ W/m2K ]</p>
+                    <p>współczynniki przenikania ciepła U [ W/m<sup>2</sup>K ]</p>
                     <ul class="term-list">
                       <li class="row">
                         <div class="term-type col-5">ściana</div>
@@ -568,7 +578,7 @@
                     </ul>
                     <p>roczne zapotrzebowanie cieplne</p>
                     <div class="energy-year">120</div>
-                    <p>kWh/m2/rok</p>
+                    <p>kWh/m<sup>2</sup>/rok</p>
                   </div>
                 </div>
               </div>
@@ -577,7 +587,7 @@
                   <p class="header"><img src="img/temperature2.gif" alt="" class="temp">STANDARD</p>
                   <div class="standard-text">
                     <p>domy energooszczędne</p>
-                    <p>współczynniki przenikania ciepła U [ W/m2K ]</p>
+                    <p>współczynniki przenikania ciepła U [ W/m<sup>2</sup>K ]</p>
                     <ul class="term-list">
                       <li class="row">
                         <div class="term-type col-5">ściana</div>
@@ -594,7 +604,7 @@
                     </ul>
                     <p>roczne zapotrzebowanie cieplne</p>
                     <div class="energy-year">50</div>
-                    <p>kWh/m2/rok</p>
+                    <p>kWh/m<sup>2</sup>/rok</p>
                   </div>
                 </div>
               </div>
@@ -603,7 +613,7 @@
                   <p class="header"><img src="img/temperature3.gif" alt="" class="temp">PREMIUM</p>
                   <div class="standard-text">
                     <p>domy pasywne</p>
-                    <p>współczynniki przenikania ciepła U [ W/m2K ]</p>
+                    <p>współczynniki przenikania ciepła U [ W/m<sup>2</sup>K ]</p>
                     <ul class="term-list">
                       <li class="row">
                         <div class="term-type col-5">ściana</div>
@@ -620,7 +630,7 @@
                     </ul>
                     <p>roczne zapotrzebowanie cieplne</p>
                     <div class="energy-year">20</div>
-                    <p>kWh/m2/rok</p>
+                    <p>kWh/m<sup>2</sup>/rok</p>
                   </div>
                 </div>
               </div>
