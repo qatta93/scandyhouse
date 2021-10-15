@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'Baskerville Old Face';
   src: 
-       url('style/baskervi.woff') format('woff'),
-       url('style/baskervi.ttf') format('truetype');
+       url('baskervi.woff') format('woff'),
+       url('baskervi.ttf') format('truetype');
 }
 
 
@@ -51,7 +51,7 @@ body.modal-open {
   padding: 0;
 }
 .header-area {
-  background-image: url("img/bcg.jpg");
+  background-image: url("../img/bcg.jpg");
   background-position: center top;
   background-size: cover;
   -webkit-background-size: cover;
@@ -333,7 +333,7 @@ a.site-logo:hover {
 
 .info {
   /* background-color: rgba(202,213,219,.75); */
-  background: linear-gradient(0deg, rgba(247, 245, 245, 0.95), rgba(255, 255, 255, 0.95)), url('img/scandy.jpg');
+  background: linear-gradient(0deg, rgba(247, 245, 245, 0.95), rgba(255, 255, 255, 0.95)), url('../img/scandy.jpg');
   text-align: center;
 }
 
@@ -396,15 +396,15 @@ a.site-logo:hover {
   }
 
   .cnc-pic--1 {
-    background-image: url(img/cnc1.jpg);
+    background-image: url(../img/cnc1.jpg);
   }
 
   .cnc-pic--2 {
-    background-image: url(img/cnc2.jpg);
+    background-image: url(../img/cnc2.jpg);
   }
 
   .cnc-pic--3 {
-    background-image: url(img/cnc3.jpg);
+    background-image: url(../img/cnc3.jpg);
   }
 
 .photo {
@@ -982,7 +982,7 @@ position: absolute;
     display: none;
   }
   .house--2-bcg {
-    background-image: url(img/special.jpg);
+    background-image: url(../img/special.jpg);
     width: 100%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -1708,7 +1708,7 @@ h2 {
 height: 400px;
 background-image:
 linear-gradient(to bottom, rgba(77, 77, 77, 0.76), rgba(0, 0, 0, 0.705)),
-url('img/real.jpg');
+url('../img/real.jpg');
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -2052,7 +2052,7 @@ height: 100%;
   height: 100%;
   background-image:
   linear-gradient(to bottom, rgba(43, 43, 44, 0.233), rgba(34, 35, 36, 0.651)),
-  url('img/scheme-bcg.jpg');
+  url('../img/scheme-bcg.jpg');
   background-position: center top;
   background-size: cover;
     -webkit-background-size: cover;
@@ -2173,15 +2173,15 @@ border: 1px solid rgb(199, 194, 194);
 }
 
 .method-pic--1 {
-background-image: url('img/frame.jpg');
+background-image: url('../img/frame.jpg');
 }
 
 .method-pic--2 {
-background-image: url('img/panel.jpg');
+background-image: url('../img/panel.jpg');
 }
 
 .method-pic--3 {
-background-image: url('img/modular.jpg');
+background-image: url('../img/modular.jpg');
 }
 
 .energy p {
@@ -2197,7 +2197,7 @@ font-weight: 400;
 
 .energy-bcg {
   padding: 5% 0;
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url('img/lightening.jpg');
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255, 0.918)), url('../img/lightening.jpg');
   background-size:cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2505,7 +2505,7 @@ font-weight: 500;
   .tech-intro-box {
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.986), rgba(250, 249, 249, 0.952)),
-    url('img/wood.jpg');
+    url('../img/wood.jpg');
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
